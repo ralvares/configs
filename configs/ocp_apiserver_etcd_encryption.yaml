@@ -1,0 +1,10 @@
+apiVersion: config.openshift.io/v1
+kind: APIServer
+metadata:
+  annotations:
+    release.openshift.io/create-only: "true"
+  name: cluster
+spec:
+  # Enabled etcd encryption option
+  encryption:
+    type: aescbc 
